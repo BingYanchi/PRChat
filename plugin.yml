@@ -1,0 +1,20 @@
+name: PRChat
+description: PRChat
+version: 1.0
+author: PixelRealms
+main: prc.Main
+permissions:
+  prc.*:
+    description: All accesses of PRChat
+    children:
+      sr.admin: true
+    default: op
+  prc.admin: 
+    description: Allow someone to use /prc command
+    default: op
+commands:
+  prc:
+    description: "A PixelRealms provided command"
+    usage: "§8«§b§l 系统 §8»§r /prc <子命令>"
+    permission: prc.admin
+    permission-message: "§8«§b§l 系统 §8»§r 无权操作"
